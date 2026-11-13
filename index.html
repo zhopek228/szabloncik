@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.svg" />
+    <title>Nazwa Firmy — Koszalin</title>
+    <meta name="description" content="Krótki opis firmy dla Google (do 160 znaków)." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ШАПКА -->
+    <header class="header">
+      <div class="container header__inner">
+        <a href="#top" class="logo">Nazwa<span>.</span></a>
+        <nav class="nav">
+          <a href="#uslugi">Usługi</a>
+          <a href="#o-nas">O nas</a>
+          <a href="#opinie">Opinie</a>
+          <a href="#kontakt" class="btn btn--small">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ПЕРВЫЙ ЭКРАН: data-hero = порядок появления при загрузке -->
+      <section class="hero">
+        <div class="hero__bg" data-parallax="0.25"></div>
+        <div class="container hero__content">
+          <p class="eyebrow" data-hero="1">Koszalin · od 2015</p>
+          <h1 data-hero="2">Główne hasło firmy w&nbsp;jednym zdaniu</h1>
+          <p class="lead" data-hero="3">
+            Krótki opis: co robicie, dla kogo i dlaczego warto wybrać właśnie was.
+          </p>
+          <div class="hero__actions" data-hero="4">
+            <a href="#kontakt" class="btn">Umów wizytę</a>
+            <a href="#uslugi" class="btn btn--ghost">Zobacz ofertę</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ЦИФРЫ: data-animate="counter" досчитывает число -->
+      <section class="stats">
+        <div class="container stats__grid" data-animate="stagger">
+          <div><strong data-animate="counter">1200+</strong><span>zadowolonych klientów</span></div>
+          <div><strong data-animate="counter">10</strong><span>lat doświadczenia</span></div>
+          <div><strong data-animate="counter">4.9</strong><span>ocena w Google</span></div>
+        </div>
+      </section>
+
+      <!-- УСЛУГИ: stagger = карточки по очереди -->
+      <section class="section" id="uslugi">
+        <div class="container">
+          <p class="eyebrow" data-animate="fade-up">Oferta</p>
+          <h2 data-animate="split">Czym się zajmujemy</h2>
+          <div class="cards" data-animate="stagger">
+            <article class="card">
+              <h3>Usługa pierwsza</h3>
+              <p>Dwa zdania opisu usługi. Konkretnie i po ludzku.</p>
+              <span class="card__price">od 99 zł</span>
+            </article>
+            <article class="card">
+              <h3>Usługa druga</h3>
+              <p>Dwa zdania opisu usługi. Konkretnie i po ludzku.</p>
+              <span class="card__price">od 149 zł</span>
+            </article>
+            <article class="card">
+              <h3>Usługa trzecia</h3>
+              <p>Dwa zdania opisu usługi. Konkretnie i po ludzku.</p>
+              <span class="card__price">od 199 zł</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- О НАС: картинка слева, текст справа -->
+      <section class="section section--alt" id="o-nas">
+        <div class="container split">
+          <div class="split__media" data-animate="fade-left">
+            <div class="placeholder-img">Zdjęcie</div>
+          </div>
+          <div class="split__text">
+            <p class="eyebrow" data-animate="fade-up">O nas</p>
+            <h2 data-animate="split">Kilka słów o firmie i ludziach</h2>
+            <p data-animate="fade-up" data-delay="0.15">
+              Tu historia firmy: skąd się wzięła, co jest dla was ważne, czym różnicie się od
+              konkurencji. Trzy–cztery zdania wystarczą.
+            </p>
+            <a href="#kontakt" class="btn" data-animate="fade-up" data-delay="0.3">Poznajmy się</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ОТЗЫВЫ -->
+      <section class="section" id="opinie">
+        <div class="container">
+          <p class="eyebrow" data-animate="fade-up">Opinie</p>
+          <h2 data-animate="split">Co mówią klienci</h2>
+          <div class="cards" data-animate="stagger">
+            <blockquote class="card quote">
+              <p>„Tu prawdziwa opinia klienta z Google.”</p>
+              <cite>— Imię klienta</cite>
+            </blockquote>
+            <blockquote class="card quote">
+              <p>„Tu prawdziwa opinia klienta z Google.”</p>
+              <cite>— Imię klienta</cite>
+            </blockquote>
+            <blockquote class="card quote">
+              <p>„Tu prawdziwa opinia klienta z Google.”</p>
+              <cite>— Imię klienta</cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- КОНТАКТЫ -->
+      <section class="section section--dark" id="kontakt">
+        <div class="container contact">
+          <h2 data-animate="split">Zadzwoń lub wpadnij do nas</h2>
+          <div class="contact__grid" data-animate="stagger">
+            <a href="tel:+48000000000" class="contact__item"><span>Telefon</span>+48 000 000 000</a>
+            <a href="mailto:kontakt@example.pl" class="contact__item"><span>E-mail</span>kontakt@example.pl</a>
+            <div class="contact__item"><span>Adres</span>ul. Przykładowa 1, Koszalin</div>
+            <div class="contact__item"><span>Godziny</span>Pn–Pt 9–18, Sob 9–14</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© <span data-year></span> Nazwa Firmy</div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
